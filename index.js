@@ -1,14 +1,34 @@
 
         const questions = [
             {
-                question: "Question 1",
-                options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-                answer: 0
+            question: "Question 1: Which driver sang smooth operator in Singapore GP 2023",
+            options: ["A. Max Verstappen", "B. Lance Stroll", "C. Carlos Sainz", "D. Lewis Hamilton"],
+            answer: 2
             },
             {
-                question: "Question 2",
-                options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-                answer: 1
+            question: "Question 2: For which F1 team Andrew Newey designed their livery for 2024?",
+            options: ["A. Aston Martin", "B. Red Bull", "C. Scuderia Ferrari", "D. Haas F1 Team"],
+            answer: 1
+            },
+            {
+            question: "Question 3: Which driver won the 2023 F1 championship?",
+            options: ["A. Lewis Hamilton", "B. Fernando Alonso", "C. Max Verstappen", "D. Kevin Magnussen"],
+            answer: 2
+            },
+            {
+            question: "Question 4: Which company has decided to take 100% ownership of the Stake F1 team?",
+            options: ["A. Lamborghini", "B. Porsche", "C. Audi", "D. Volkswagen"],
+            answer: 2
+            },
+            {
+            question: "Question 5: Which team principle was removed from his position for 2024?",
+            options: ["A. Gunther Steiner ", "B. Cyril Abiteboul", "C. Toto Wolfff", "D.Lewis Stroll"],
+            answer: 0
+            },
+            {
+            question: "Question 6: Which driver has HoneyBadger design on his helmet?",
+            options: ["A. Michael Schumacher", "B. Niki Lauda", "C. Sebastian Vettel", "D. Daniel Ricciardo"],
+            answer: 3
             },
         ];
 
@@ -37,6 +57,7 @@
         function loadQuestion() {
             const currentQuestion = questions[currentQuestionIndex];
             quizContainer.innerHTML = `
+                <div class="rounded-lg bg-gradient-to-r from-white to-gray-200 shadow-lg p-4">
                 <h2 class="text-2xl font-bold mb-4">${currentQuestion.question}</h2>
                 <div class="grid grid-cols-2 gap-4">
                     ${currentQuestion.options.map((option, index) => `
@@ -46,6 +67,7 @@
                         </label>
                     `).join("")}
                 </div>
+                <div>
             `;
         }
 

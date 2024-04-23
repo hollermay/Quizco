@@ -2,10 +2,10 @@ module.exports = {
   content: [],
   theme: {
     extend: {
-      backgroundImage: {
-        'my-image': "url('/path/to/your/image.jpg')",
-      },
-    },
+      backgroundImage: theme => ({
+        "grey-bg": "url('/assets/Bg.jpg')",
+      })
+    }
   },
   plugins: [],
 }
