@@ -1,41 +1,6 @@
-
-                
-        const questions = [
-            {
-            question: "Which driver sang smooth operator in Singapore GP 2023",
-            options: ["A. Max Verstappen", "B. Lance Stroll", "C. Carlos Sainz", "D. Lewis Hamilton"],
-            answer: 2
-            },
-            {
-            question: "For which F1 team Andrew Newey designed their livery for 2024?",
-            options: ["A. Aston Martin", "B. Red Bull", "C. Scuderia Ferrari", "D. Haas F1 Team"],
-            answer: 1
-            },
-            {
-            question: "Which driver won the 2023 F1 championship?",
-            options: ["A. Lewis Hamilton", "B. Fernando Alonso", "C. Max Verstappen", "D. Kevin Magnussen"],
-            answer: 2
-            },
-            {
-            question: "Which company has decided to take 100% ownership of the Stake F1 team?",
-            options: ["A. Lamborghini", "B. Porsche", "C. Audi", "D. Volkswagen"],
-            answer: 2
-            },
-            {
-            question: "Which team principle was removed from his position for 2024?",
-            options: ["A. Gunther Steiner ", "B. Cyril Abiteboul", "C. Toto Wolfff", "D.Lewis Stroll"],
-            answer: 0
-            },
-            {
-            question: "Which driver has HoneyBadger design on his helmet?",
-            options: ["A. Michael Schumacher", "B. Niki Lauda", "C. Sebastian Vettel", "D. Daniel Ricciardo"],
-            answer: 3
-            },
-        ];
-
         let currentQuestionIndex = 0;
         let score = 0;
-
+        
         const startPage = document.getElementById("start-page");
         const quizPage = document.getElementById("quiz-page");
         const resultPage = document.getElementById("result-page");
@@ -108,7 +73,12 @@
         }
 
         function endQuiz() {
+            if(currentQuestionIndex === 0){
+                alert("Please attempt the quiz first.");
+            }
+            else{
             showResult();
+            }
         }
 
         function showResult() {
@@ -136,3 +106,35 @@
             }
         }
 
+        const questions = [
+            {
+            question: "Which driver sang smooth operator in Singapore GP 2023",
+            options: ["A. Max Verstappen", "B. Lance Stroll", "C. Carlos Sainz", "D. Lewis Hamilton"],
+            answer: 2
+            },
+            {
+            question: "For which F1 team Andrew Newey designed their livery for 2024?",
+            options: ["A. Aston Martin", "B. Red Bull", "C. Scuderia Ferrari", "D. Haas F1 Team"],
+            answer: 1
+            },
+            {
+            question: "Which driver won the 2023 F1 championship?",
+            options: ["A. Lewis Hamilton", "B. Fernando Alonso", "C. Max Verstappen", "D. Kevin Magnussen"],
+            answer: 2
+            },
+            {
+            question: "Which company has decided to take 100% ownership of the Stake F1 team?",
+            options: ["A. Lamborghini", "B. Porsche", "C. Audi", "D. Volkswagen"],
+            answer: 2
+            },
+            {
+            question: "Which team principle was removed from his position for 2024?",
+            options: ["A. Gunther Steiner ", "B. Cyril Abiteboul", "C. Toto Wolfff", "D.Lewis Stroll"],
+            answer: 0
+            },
+            {
+            question: "Which driver has HoneyBadger design on his helmet?",
+            options: ["A. Michael Schumacher", "B. Niki Lauda", "C. Sebastian Vettel", "D. Daniel Ricciardo"],
+            answer: 3
+            },
+        ];
