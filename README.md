@@ -34,8 +34,8 @@ This is a simple F1 quiz website built using HTML, CSS, and JavaScript. The webs
 
 ## Screenshots
 
-![Screenshot 1](/screenshots/screenshot1.png)
-![Screenshot 2](/screenshots/screenshot2.png)
+![Screenshot 1](/assets/SS3.jpeg)
+![Screenshot 2](/assets/SS1.jpeg)
 
 ## Live Demo
 You can try the live demo [here](#).
